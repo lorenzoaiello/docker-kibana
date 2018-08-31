@@ -36,8 +36,8 @@ elasticsearch.url: '${ELASTICSEARCH_PROTOCOL}://${ELASTICSEARCH_HOST}:${ELASTICS
 # the username and password that the Kibana server uses to perform maintenance on the Kibana
 # index at startup. Your Kibana users still need to authenticate with Elasticsearch, which
 # is proxied through the Kibana server.
-elasticsearch.username: "kibana"
-elasticsearch.password: '${KIBANA_PWD}'
+# elasticsearch.username: "kibana"
+# elasticsearch.password: '${KIBANA_PWD}'
 searchguard.cookie.password: "4fjNPloEVvrVj28BsVh3jI8t3pmv7Qg6"
 elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
 
@@ -53,10 +53,10 @@ elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
 
 # Optional setting that enables you to specify a path to the PEM file for the certificate
 # authority for your Elasticsearch instance.
-elasticsearch.ssl.certificateAuthorities: /etc/elasticsearch/searchguard/ssl/ca/root-ca.pem
+# elasticsearch.ssl.certificateAuthorities: /etc/elasticsearch/searchguard/ssl/ca/root-ca.pem
 
 # To disregard the validity of SSL certificates, change this setting’s value to false.
-elasticsearch.ssl.verificationMode: "certificate"
+elasticsearch.ssl.verificationMode: false
 
 # Time in milliseconds to wait for Elasticsearch to respond to pings. Defaults to the value of
 # the elasticsearch.requestTimeout setting.
