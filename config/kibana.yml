@@ -56,7 +56,7 @@ elasticsearch.requestHeadersWhitelist: [ "Authorization", "sgtenant" ]
 # elasticsearch.ssl.certificateAuthorities: /etc/elasticsearch/searchguard/ssl/ca/root-ca.pem
 
 # To disregard the validity of SSL certificates, change this setting’s value to false.
-elasticsearch.ssl.verificationMode: false
+# elasticsearch.ssl.verificationMode: "false"
 
 # Time in milliseconds to wait for Elasticsearch to respond to pings. Defaults to the value of
 # the elasticsearch.requestTimeout setting.
